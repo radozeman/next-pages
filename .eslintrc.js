@@ -38,6 +38,19 @@ module.exports = {
     ],
 
     rules: {
+        "no-restricted-exports": [
+            "error",
+            {
+                restrictedNamedExports: [],
+            },
+        ],
+        "react/function-component-definition": [
+            "error",
+            {
+                namedComponents: "arrow-function",
+                unnamedComponents: "arrow-function",
+            },
+        ],
         "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/no-explicit-any": "error",
         "react/react-in-jsx-scope": "off",
