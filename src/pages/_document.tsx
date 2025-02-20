@@ -31,7 +31,7 @@ const getInitialProps = async (
     }
 }
 
-function Document() {
+export const Document = () => {
     return (
         <Html lang="en">
             <Head />
