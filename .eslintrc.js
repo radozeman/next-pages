@@ -38,6 +38,8 @@ module.exports = {
     ],
 
     rules: {
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": "warn",
         "no-restricted-exports": [
             "error",
             {
