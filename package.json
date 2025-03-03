@@ -8,10 +8,13 @@
         "start": "next start",
         "format": "prettier --check .",
         "prepare": "husky",
-        "type-check": "tsc"
+        "type-check": "tsc",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build"
     },
     "dependencies": {
         "@hookform/resolvers": "^4.1.0",
+        "@storybook/addon-themes": "^8.6.3",
         "@tanstack/react-query": "^5.66.7",
         "ky": "^1.7.5",
         "next": "13.5.8",
@@ -22,8 +25,16 @@
         "zod": "^3.24.2"
     },
     "devDependencies": {
+        "@chromatic-com/storybook": "^3.2.5",
         "@commitlint/cli": "^19.7.1",
         "@next/eslint-plugin-next": "^15.1.7",
+        "@storybook/addon-essentials": "^8.6.3",
+        "@storybook/addon-onboarding": "^8.6.3",
+        "@storybook/blocks": "^8.6.3",
+        "@storybook/experimental-addon-test": "^8.6.3",
+        "@storybook/nextjs": "^8.6.3",
+        "@storybook/react": "^8.6.3",
+        "@storybook/test": "^8.6.3",
         "@strv/commitlint-config": "^4.0.0",
         "@strv/prettier-config": "^3.0.0",
         "@types/node": "^20",
@@ -42,9 +53,11 @@
         "eslint-plugin-security": "^1.4.0",
         "eslint-plugin-simple-import-sort": "^7.0.0",
         "eslint-plugin-sonarjs": "^0.12.0",
+        "eslint-plugin-storybook": "^0.11.3",
         "husky": "^9.1.7",
         "lint-staged": "^15.4.3",
         "prettier": "^2.5.1",
+        "storybook": "^8.6.3",
         "typescript": "^5"
     }
 }

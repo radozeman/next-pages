@@ -19,13 +19,14 @@ module.exports = {
             version: "detect",
         },
         "import/resolver": {
+            typescript: {},
             node: {
                 extensions: [".ts", ".tsx"],
             },
         },
     },
 
-    plugins: ["@typescript-eslint"],
+    plugins: ["@typescript-eslint", "jsx-a11y"],
     extends: [
         "next/core-web-vitals",
         "plugin:@typescript-eslint/recommended",
@@ -35,6 +36,7 @@ module.exports = {
         "plugin:prettier/recommended",
         "plugin:sonarjs/recommended",
         "plugin:security/recommended",
+        "plugin:storybook/recommended",
     ],
 
     rules: {
